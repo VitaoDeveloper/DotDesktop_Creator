@@ -8,24 +8,25 @@ importers:
 
   .:
     dependencies:
-      openai:
-        specifier: ^6.37.0
-        version: 6.37.0
+      dotenv:
+        specifier: ^17.4.2
+        version: 17.4.2
+      readline-sync:
+        specifier: ^1.4.10
+        version: 1.4.10
 
 packages:
 
-  openai@6.37.0:
-    resolution: {integrity: sha512-0H5dEGFmmLv6KSd0W1w2nyL8WsLkX6yoLeQpU+dZAOuGcany5qkYQMmj35ZrKgb6yiyYqpUzFOpR8mZQkgqeEQ==}
-    hasBin: true
-    peerDependencies:
-      ws: ^8.18.0
-      zod: ^3.25 || ^4.0
-    peerDependenciesMeta:
-      ws:
-        optional: true
-      zod:
-        optional: true
+  dotenv@17.4.2:
+    resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
+    engines: {node: '>=12'}
+
+  readline-sync@1.4.10:
+    resolution: {integrity: sha512-gNva8/6UAe8QYepIQH/jQ2qn91Qj0B9sYjMBBs3QOB8F2CXcKgLxQaJRP76sWVRQt+QU+8fAkCbCvjjMFu7Ycw==}
+    engines: {node: '>= 0.8.0'}
 
 snapshots:
 
-  openai@6.37.0: {}
+  dotenv@17.4.2: {}
+
+  readline-sync@1.4.10: {}
