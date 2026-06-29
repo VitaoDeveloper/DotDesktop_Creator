@@ -1,6 +1,11 @@
 import { env, camelCase, capitalizeWithSpaces } from "./config.js";
 import fs from "fs";
 
+if (Object.values(env).includes(undefined)) {
+    console.error('You must create a .env file based on .env.example and fill in all the fields');
+    process.exit(1);
+}
+
 const content = `[Desktop Entry]
 Name=${capitalizeWithSpaces(env.name)}
 Comment=${env.comment}
